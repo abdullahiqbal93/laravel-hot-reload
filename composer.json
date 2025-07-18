@@ -1,0 +1,36 @@
+{
+  "name": "dedsec/laravel-hot-reload",
+  "description": "Laravel Hot Reload for Blade Views and Livewire Components",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Abdullah Iqbal",
+      "email": "mohamedabdullah93@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0|^9.0",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "dedsec\\LaravelHotReload\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "dedsec\\LaravelHotReload\\HotReloadServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "archive": {
+    "exclude": [],
+    "include": [
+      "resources/js/*"
+    ]
+  }
+}
